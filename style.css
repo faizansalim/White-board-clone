@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+
+body,html{
+    margin:0;
+    padding: 0;
+}
+
+.tools{
+    background: aliceblue;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.content{
+    height: calc(100vh - 100px);
+    background: white;
+}
+
+#canvas{
+   height: 100%;
+   width: 100%; 
+}
+
+.toolbox{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.tool{
+    height: 60px;
+    position: relative;
+}
+
+.tool img{
+    height: 100%;
+}
+
+.tool-options{
+height: 100px;
+width:160px;
+/* border: 1px solid black; */
+position:absolute;
+background-color: cadetblue;
+border-radius: 10px;
+top: 60px;
+left:-60px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+}
+
+.pencil-colors{
+display: flex;
+width: 100%;
+justify-content: space-evenly;
+}
+
+.pencil-colors div{
+height:30px;
+width: 30px;;
+border-radius: 50%;
+}
+
+.red{
+background-color: red;
+}
+
+.yellow{
+
+background-color: yellow;
+}
+
+.blue{
+
+background-color: blue;
+}
+
+.black{
+
+background-color: black;
+
+}
+
+
+.hide{
+    display: none;
+}
+
+.active-tool{
+    background-color: darkgray;
+    height: 60px;
+    padding: 7px;
+    border-radius: 20px;
+}
+
+.sticky{
+position:absolute;
+top:50%;
+left:25%;
+border:  solid 1px  black;
+width: 233px;
+}
+
+.sticky-header{
+border-bottom: solid lightgrey;
+background: aliceblue;
+height: 40px;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+padding-right: 5px;
+width: 100%;
+
+}
+
+.minimize{
+height: 20px;
+background-color: darkseagreen;
+width: 20px;
+border-radius: 50%;
+margin-right: 5px;
+
+}
+
+.close{
+height: 20px;
+background-color: lightcoral;
+width: 20px;
+border-radius: 50%;
+margin-right: 5px;
+}
+
+.sticky-content{
+ color: red;
+}
+
+.stickybox{
+border: none;
+outline: none;
+}
+
